@@ -1,4 +1,4 @@
 *.pyc
 .DS_Store
-/venv
-/db.sqlite3
+/olympus-app/venv
+/olympus-app/db.sqlite3
