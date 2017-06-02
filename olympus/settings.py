@@ -84,3 +84,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
+
+# Third-party libraries
+
+# statsd_exporter daemon listens to UDP at localhost:8125
+STATSD_HOST = 'localhost'
+STATSD_PORT = 8125
