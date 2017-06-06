@@ -15,6 +15,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'olympus.apps.hello.apps.HelloConfig',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +89,7 @@ STATIC_URL = '/static/'
 
 # Third-party libraries
 
-# statsd_exporter daemon listens to UDP at localhost:8125
+# statsd_exporter daemon listens to UDP at localhost:8125.
+# It exports StatsD-style metrics as Prometheus metrics at localhost:9102.
 STATSD_HOST = 'localhost'
 STATSD_PORT = 8125
