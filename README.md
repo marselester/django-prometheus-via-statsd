@@ -1,4 +1,8 @@
-# Instrumenting Django with Prometheus and StatsD
+# [Instrumenting Django with Prometheus and StatsD](http://marselester.com/django-prometheus-via-statsd.html)
+
+This repository is an example setup of Django application
+that exposes its metrics for Prometheus monitoring toolkit using StatsD and statsd_exporter.
+The application and Prometheus run on Kubernetes cluster.
 
 Get the Olympus application running to emit StatsD metrics.
 
