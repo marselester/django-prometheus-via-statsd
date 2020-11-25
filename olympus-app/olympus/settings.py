@@ -87,6 +87,30 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Logging in JSON format
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'json': {
+            '()': 'json_log_formatter.JSONFormatter',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'json'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+        },
+    }
+}
+
 # Third-party libraries
 
 # statsd_exporter daemon listens to UDP at localhost:8125.
